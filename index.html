@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Add this inside <head> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image" href="images/OIP (5).webp">
+<title> Survey </title>
+<link rel="stylesheet" href="surveyform.css">
+    </head>
+    <body>
+        <h1 id="title"> Books club survey</h1>
+        <p id="description">Thanku for taking the time for my survey </p>
+    <form id="survey-from" action="https://formsubmit.co/abeehazafarsian@gmail.COM" method="POST">
+        <fieldset>
+            <label for="name">Name
+      <input id="name" type="text" name="user_name" placeholder="Your Name" required > 
+            </label>
+            <label for="age">Age
+             <input id="age" type="number" name="user_age" min="12" max="100" placeholder="Your age" required >
+            </label>
+         </fieldset>
+         <hr id="sec-line">
+        <fieldset> 
+           <label>When did you begin reading a book?
+         <select id="dropdown" name="reading_start_age"> 
+                <option>select an option</option>
+                <option>Less then 12 years old</option>
+                <option>12-15 years old</option>
+                <option>16 years old or more</option>
+            </select>
+           </label>
+           <label> What kind of books do you like to read?
+           <select id="dropdowngen" name="favorite_genre">
+                <option>Fav genere</option>
+                <option>Action & Adventure</option>
+                <option>Mystery & Crime</option>
+                <option>Educational/Religious</option>
+                <option>Fantasy</option>
+                <option>Romance & Drama</option>
+                <option>Self help</option>
+                <option>History & Politics</option>
+            </select>
+           </label>
+           <p>Do you prefer reading physical books or e-books?</p>
+            <label class="rdbtn">
+                <input type="radio" name="format_preference" value="Physical books">
+                Physical books
+            </label>
+            <label class="rdbtn">
+                <input type="radio" name="format_preference" value="E-books">
+                E-books
+            </label>
+            <label class="rdbtn">
+                <input type="radio" name="format_preference" value="Both">
+                Both
+            </label>
+            <label class="rdbtn">
+                <input type="radio" name="format_preference" value="Depends">
+                Depends
+            </label>
+
+            <p> What factors influence your book selection?</p>
+            <label class="chkbtn">
+                <input type="checkbox" name="influences[]" value="Recommendations">
+                Recommendations
+            </label>
+            <label class="chkbtn">
+                <input type="checkbox" name="influences[]" value="Book reviews">
+                Book reviews
+            </label>
+            <label class="chkbtn">
+                <input type="checkbox" name="influences[]" value="Bestseller lists">
+                Bestseller lists
+            </label>
+            <label class="chkbtn">
+                <input type="checkbox" name="influences[]" value="Book covers">
+                Book covers
+            </label>
+            <label class="chkbtn">
+                <input type="checkbox" name="influences[]" value="Author reputation">
+                Author reputation
+            </label>
+        
+        </fieldset>
+        
+        <fieldset>
+              <textarea name="favorite_book" rows="5" cols="35" placeholder="Which is your favorite book and why?"></textarea> 
+              <hr id="third-line">
+              <textarea name="final_wisdom" rows="5" cols="35" placeholder="Any final words of wisdom?Any reccomendations?Leave them below! Bye, and thanks for taking the time to do this!!"></textarea> 
+        </fieldset>
+        <input type="submit"/ value="submit survey" id="submit" >
+
+    </form>
+
+    </body>
+
